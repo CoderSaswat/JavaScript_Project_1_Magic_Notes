@@ -56,8 +56,8 @@ function showNotes()
 
     let nodesElem=document.getElementById('notes');//in html file these is a div of id notes in that div all notes will be save by given html
     if(notesObj.length==0)  //if no notes are there in local stroage
-    nodesElem.innerHTML=`<h5 style="color: red;">Your notes are empty...!!</h4>`;
-    // else
+    nodesElem.innerHTML=`<h5 style="color: red;">Your notes are empty...!!</h5>`
+    else
     nodesElem.innerHTML=html;   //all notes with given html will be inside the big div
 }
 
