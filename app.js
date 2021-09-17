@@ -38,6 +38,7 @@ function showNotes()
     //so here how many notes will b there,that no of boxex will be created follwing syntx by foreach
     let html="";
     notesObj.forEach(function(element,index){
+        //now it is the time to populate
      html+=
         `
         <div class="noteCard my-2 mx-2 card" style="width: 15rem;">
@@ -56,7 +57,7 @@ function showNotes()
     let nodesElem=document.getElementById('notes');//in html file these is a div of id notes in that div all notes will be save by given html
     if(notesObj.length==0)  //if no notes are there in local stroage
     nodesElem.innerHTML=`<h5 style="color: red;">Your notes are empty...!!</h4>`;
-    else
+    // else
     nodesElem.innerHTML=html;   //all notes with given html will be inside the big div
 }
 
